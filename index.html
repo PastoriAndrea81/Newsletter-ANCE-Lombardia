@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>ANCE Lombardia | Newsletter settimanale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* Layout di base */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4f5f7;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .wrapper {
+      width: 100%;
+      background-color: #f4f5f7;
+      padding: 20px 0;
+    }
+
+    .preheader {
+      font-size: 11px;
+      color: #777777;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    /* Contenitore principale */
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    /* Header */
+    .header {
+      background-color: #003a70; /* blu ANCE Lombardia */
+      color: #ffffff;
+      padding: 20px 30px;
+      text-align: left;
+    }
+
+    .header-logo {
+      max-width: 190px;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .header-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .header-subtitle {
+      font-size: 14px;
+      margin-top: 4px;
+      opacity: 0.9;
+    }
+
+    /* Contenuto */
+    .content {
+      padding: 24px 30px 32px;
+    }
+
+    .hello {
+      font-size: 14px;
+      color: #333333;
+      line-height: 1.5;
+      margin-bottom: 18px;
+    }
+
+    /* Sezioni */
+    .section-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #777777;
+      margin-top: 8px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #003a70;
+      margin: 4px 0 14px;
+    }
+
+    /* Figura / immagine news */
+    .news-figure {
+      margin: 0 0 10px;
+    }
+
+    .news-image {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      display: block;
+    }
+
+    /* Singola news */
+    .news-item {
+      margin-bottom: 26px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #e1e4ea;
+    }
+
+    .news-item:last-of-type {
+      border-bottom: none;
+      margin-bottom: 10px;
+      padding-bottom: 0;
+    }
+
+    .news-tag {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999999;
+      margin-bottom: 2px;
+    }
+
+    .news-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #003a70;
+      margin: 4px 0 4px;
+    }
+
+    .news-meta {
+      font-size: 12px;
+      color: #999999;
+      margin-bottom: 8px;
+    }
+
+    .news-text {
+      font-size: 14px;
+      color: #333333;
+      line-height: 1.5;
+      margin: 0 0 8px;
+    }
+
+    .news-link {
+      font-size: 13px;
+      font-weight: bold;
+      margin-top: 6px;
+    }
+
+    /* Link generali */
+    a {
+      color: #005b96; /* blu link ANCE */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Chip / tag */
+    .chips {
+      margin-top: 6px;
+      font-size: 12px;
+      color: #555555;
+    }
+
+    .chip {
+      display: inline-block;
+      background-color: #f4f5f7;
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin-right: 4px;
+      margin-top: 4px;
+    }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background-color: #e1e4ea;
+      margin: 16px 0 14px;
+    }
+
+    /* Call to action */
+    .cta {
+      margin-top: 24px;
+      text-align: center;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #005b96;
+      color: #ffffff !important;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .cta a:hover {
+      opacity: 0.9;
+    }
+
+    /* Footer */
+    .footer {
+      font-size: 11px;
+      color: #888888;
+      text-align: center;
+      padding: 14px 20px 10px;
+      line-height: 1.5;
+    }
+
+    .footer a {
+      color: #005b96;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        border-radius: 0;
+      }
+
+      .header,
+      .content {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Testo che alcuni client email mostrano in anteprima -->
+    <div class="preheader">
+      Nuova Impresa, competenze per lo sviluppo e housing sociale: le novità della settimana 🧱🏙️
+    </div>
+
+    <div class="container">
+      <!-- HEADER -->
+      <header class="header">
+        <img
+          src="https://lombardia.ance.it/wp-content/uploads/sites/7/2022/04/lombardia.png"
+          alt="ANCE Lombardia"
+          class="header-logo"
+        />
+        <h1 class="header-title">🗞️ Newsletter settimanale ANCE Lombardia</h1>
+        <p class="header-subtitle">
+          Le principali novità della settimana dal sito di ANCE Lombardia.
+        </p>
+      </header>
+
+      <!-- CONTENUTO -->
+      <main class="content">
+        <p class="hello">
+          Ciao 👋<br>
+          ecco una selezione delle news pubblicate da ANCE Lombardia nella settimana
+          <strong>24–30 novembre 2025</strong>, con link diretti agli approfondimenti.
+        </p>
+
+        <!-- SEZIONE 1: IMPRESE E FINANZA -->
+        <div class="section-label">In evidenza</div>
+        <h2 class="section-title">💼 Misure per le nuove imprese</h2>
+
+        <!-- NEWS 1: Nuova Impresa 2025 -->
+        <article class="news-item">
+          <figure class="news-figure">
+            <img
+              class="news-image"
+              src="https://lombardia.ance.it/wp-content/uploads/sites/7/2025/11/Immagine-6.png"
+              alt="Nuova Impresa 2025 – terzo incremento della dotazione finanziaria"
+            >
+          </figure>
+
+          <div class="news-tag">Credito, finanza e internazionalizzazione</div>
+          <h3 class="news-title">
+            Nuova Impresa 2025 – terzo incremento della dotazione finanziaria 🔎
+          </h3>
+          <div class="news-meta">
+            27 novembre 2025 · Misura «Nuova Impresa» – Regione Lombardia
+          </div>
+          <p class="news-text">
+            Regione Lombardia incrementa ulteriormente le risorse della misura «Nuova Impresa»
+            a sostegno dell’avvio di nuove attività e percorsi di autoimprenditorialità sul
+            territorio lombardo.
+          </p>
+          <p class="news-text">
+            Il provvedimento rafforza uno strumento già molto utilizzato da micro e piccole imprese. ℹ️
+          </p>
+          <p class="news-link">
+            👉 <a href="https://lombardia.ance.it/2025/11/27/nuova-impresa-2025-terzo-incremento-della-dotazione-finanziaria/" target="_blank" rel="noopener">
+              Leggi la news completa sul sito ANCE Lombardia
+            </a>
+          </p>
+          <div class="chips">
+            <span class="chip">#NuovaImpresa</span>
+            <span class="chip">#AvvioImprese</span>
+            <span class="chip">#ContributiRegionali</span>
+          </div>
+        </article>
+
+        <!-- NEWS 2: Competenze per lo sviluppo -->
+        <article class="news-item">
+          <figure class="news-figure">
+            <img
+              class="news-image"
+              src="https://lombardia.ance.it/wp-content/uploads/sites/7/2025/11/immagine-5.png"
+              alt="Bando competenze per lo sviluppo – avviso attuativo"
+            >
+          </figure>
+
+          <div class="news-tag">Formazione · Transizione industriale</div>
+          <h3 class="news-title">
+            Bando «Competenze per lo sviluppo» – avviso attuativo 📘
+          </h3>
+          <div class="news-meta">
+            26 novembre 2025 · Programma regionale FESR 2021–2027
+          </div>
+          <p class="news-text">
+            Pubblicato l’aggiornamento dell’avviso della misura «Competenze per lo sviluppo»,
+            che sostiene la formazione a favore della transizione industriale e della
+            sostenibilità delle imprese.
+          </p>
+          <p class="news-text">
+            L’avviso definisce condizioni di accesso e regole operative per nuovi percorsi
+            formativi dedicati a imprese e lavoratori. 🎯
+          </p>
+          <p class="news-link">
+            👉 <a href="https://lombardia.ance.it/2025/11/26/bando-competenze-per-lo-sviluppo-avviso-attuativo/" target="_blank" rel="noopener">
+              Dettagli dell’avviso sul sito ANCE Lombardia
+            </a>
+          </p>
+          <div class="chips">
+            <span class="chip">#Competenze</span>
+            <span class="chip">#TransizioneIndustriale</span>
+            <span class="chip">#FormazioneImprese</span>
+          </div>
+        </article>
+
+        <!-- SEZIONE 2: HOUSING SOCIALE E TERRITORIO -->
+        <div class="divider"></div>
+
+        <div class="section-label">Politiche abitative e territorio</div>
+        <h2 class="section-title">🏙️ Linee di indirizzo per l’Housing sociale</h2>
+
+        <!-- NEWS 3: Housing sociale -->
+        <article class="news-item">
+          <figure class="news-figure">
+            <img
+              class="news-image"
+              src="https://lombardia.ance.it/wp-content/uploads/sites/7/2025/11/Immagine-4.png"
+              alt="Linee di indirizzo per l’attuazione dell’asse Housing sociale"
+            >
+          </figure>
+
+          <div class="news-tag">Edilizia e territorio · Rigenerazione urbana</div>
+          <h3 class="news-title">
+            Linee di indirizzo per l’attuazione dell’asse Housing sociale 🏡
+          </h3>
+          <div class="news-meta">
+            24 novembre 2025 · Piano regionale dei servizi abitativi
+          </div>
+          <p class="news-text">
+            Regione Lombardia definisce nuove Linee di indirizzo per l’asse Housing sociale,
+            focalizzate su interventi di rigenerazione urbana e sull’offerta di abitazioni a
+            canone calmierato.
+          </p>
+          <p class="news-text">
+            Gli interventi sono rivolti a diverse categorie di beneficiari, tra cui lavoratori
+            dei servizi e famiglie con redditi medio-bassi, aprendo spazi di collaborazione
+            per il settore delle costruzioni. 🤝
+          </p>
+          <p class="news-link">
+            👉 <a href="https://lombardia.ance.it/2025/11/24/linee-di-indirizzo-per-lattuazione-dellasse-housing-sociale/" target="_blank" rel="noopener">
+              Approfondisci le Linee di indirizzo sul sito ANCE Lombardia
+            </a>
+          </p>
+          <div class="chips">
+            <span class="chip">#HousingSociale</span>
+            <span class="chip">#RigenerazioneUrbana</span>
+            <span class="chip">#PoliticheAbitative</span>
+          </div>
+        </article>
+
+        <!-- CTA -->
+        <div class="cta">
+          <a href="https://lombardia.ance.it/" target="_blank" rel="noopener">
+            🔗 Vai a tutte le news su lombardia.ance.it
+          </a>
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        Ricevi questa newsletter come aggiornamento informativo di ANCE Lombardia.<br>
+        Puoi consultare l’archivio completo delle notizie sul sito ufficiale
+        <a href="https://lombardia.ance.it/" target="_blank" rel="noopener">lombardia.ance.it</a>.<br><br>
+        © ANCE Lombardia – Tutti i diritti riservati.
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
